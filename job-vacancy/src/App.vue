@@ -1,12 +1,12 @@
 <template>
   <div class="app">
-    <p>{{ name }}</p>
+    <p>{{ name }} - {{ age }}</p>
     <button @click="changeName('updated')">change name</button>
   </div>
 </template>
 
 <script lang="ts">
-let age: string | number = 29
+
 import { defineComponent } from "vue";
 
 export default defineComponent({
@@ -15,7 +15,7 @@ export default defineComponent({
   data() {
     return {
       name: 'Link',
-      age: 29
+      age: 29 as number | string
     };
   },
   methods: {
