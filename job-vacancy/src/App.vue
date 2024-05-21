@@ -6,6 +6,7 @@
 </template>
 
 <script lang="ts">
+let age: string | number = 29
 import { defineComponent } from "vue";
 
 export default defineComponent({
@@ -14,6 +15,7 @@ export default defineComponent({
   data() {
     return {
       name: 'Link',
+      age: 29
     };
   },
   methods: {
