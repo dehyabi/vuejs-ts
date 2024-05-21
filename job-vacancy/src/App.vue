@@ -22,7 +22,7 @@ export default defineComponent({
     // state.age = 37
     // return { ...toRefs(state) };
     const name = ref('Link');
-    name.value = 'Youtube'
+    const age = ref<number | string>(23)
   },
   methods: {
     changeName(name: string) {
