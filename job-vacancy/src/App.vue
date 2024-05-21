@@ -21,8 +21,10 @@ export default defineComponent({
     // state.name = "James"
     // state.age = 37
     // return { ...toRefs(state) };
-    const name = ref('Link');
-    const age = ref<number | string>(23)
+    const name = ref("Link");
+    const age = ref<number | string>(23);
+
+    return { name, age };
   },
   methods: {
     changeName(name: string) {
