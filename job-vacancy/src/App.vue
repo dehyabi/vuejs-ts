@@ -1,8 +1,6 @@
 <template>
   <div class="app">
-    <p>{{ name }} - {{ age }}</p>
-    <button @click="changeName('bill')">change name</button>
-    <button @click="changeAge('34')">change age</button>
+
   </div>
 </template>
 
@@ -21,21 +19,13 @@ export default defineComponent({
     // state.name = "James"
     // state.age = 37
     // return { ...toRefs(state) };
-    const name = ref("Link");
-    const age = ref<number | string>(23);
+    // const name = ref("Link");
+    // const age = ref<number | string>(23);
 
-    return { name, age };
+    // return { name, age };
   },
-  methods: {
-    changeName(name: string) {
-      this.name = name;
-      return name;
-    },
-    changeAge(age: string | number) {
-      this.age = age;
-      return age;
-    },
-  },
+
+
 });
 </script>
 
