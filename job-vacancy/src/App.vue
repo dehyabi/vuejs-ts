@@ -1,31 +1,22 @@
 <template>
-  <div class="app">
-
-  </div>
+  <div class="app"></div>
 </template>
 
 <script lang="ts">
 import { defineComponent, reactive, ref, toRefs } from "vue";
+import Job from "./types/Job";
 
 export default defineComponent({
   name: "App",
   components: {},
   setup() {
-    // const state = reactive({
-    //   name: "Link",
-    //   age: 28 as string | number,
-    // });
-
-    // state.name = "James"
-    // state.age = 37
-    // return { ...toRefs(state) };
-    // const name = ref("Link");
-    // const age = ref<number | string>(23);
-
-    // return { name, age };
+    const jobs = ref<Job[]>([
+      { title: "Laravel Developer", location: "USA", salary: 4000, id: "1" },
+      { title: "javascript developer", location: "Japan", salary: 4200, id: "2" },
+      { title: "Backend developer", location: "UK", salary: 5000, id: "3" },
+    ]);
+    return {jobs}
   },
-
-
 });
 </script>
 
