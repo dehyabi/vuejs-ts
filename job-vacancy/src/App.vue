@@ -17,6 +17,9 @@ export default defineComponent({
       name: "Link",
       age: 28 as string | number,
     });
+
+    state.name = "James"
+    state.age = 37
     return { ...toRefs(state) };
   },
   methods: {
